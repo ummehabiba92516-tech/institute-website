@@ -21,7 +21,7 @@ body{
 
     padding: 20px 80px;
 
-    background-color:lightblue;
+    background-color:rgba(226, 232, 240, 0.15);
     /* padding: 10px 40px; */
     
     border: none;
@@ -34,13 +34,14 @@ body{
 /* Logo Image */
 
 .logo img{
-    width: 130px;
+    max-width: 220px;
+    width: auto;
     height: auto;
-    border: none ;
-    border-radius: 0 ;
-    outline: none ;
-    box-shadow: none ;
-    background: transparent ;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
     display: block;
 }
 
@@ -57,8 +58,9 @@ body{
 
 .nav-links li a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
     transition: 0.3s;
 }
@@ -101,6 +103,11 @@ body{
 .hero-content h1{
     font-size: 60px;
     margin-bottom: 20px;
+}
+
+.hero-content h1,
+.hero-content p{
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
 }
 
 /* Paragraph */
@@ -729,7 +736,7 @@ body{
 
     color: white;
 
-    padding-top: 80px;
+    padding: 80px 0 40px;
 }
 
 /* Footer Container */
@@ -742,6 +749,12 @@ body{
     gap: 40px;
 
     padding: 0px 80px 60px;
+
+    align-items: start;
+}
+
+.footer-box{
+    text-align: left;
 }
 
 /* Footer Box */
@@ -755,7 +768,7 @@ body{
 /* Footer Paragraph */
 
 .footer-box p{
-    color: gray;
+    color: #cbd5e1;
 
     line-height: 28px;
 
@@ -776,15 +789,15 @@ body{
 {
     text-decoration: none;
 
-    color: lavenderblush;
+    color: #e2e8f0;
 
-    transition: 0.3em;
+    transition: 0.3s;
 }
 
 /* Hover Effect */
 
 .footer-box ul li a:hover{
-    color: mediumslateblue;
+    color: #93c5fd;
 }
 
 /* Social Links */
@@ -795,12 +808,14 @@ body{
     flex-direction: column;
 
     gap: 12px;
+
+    justify-content: flex-start;
 }
 
 .footer-social a{
     text-decoration: none;
 
-    color: violet;
+    color: #e2e8f0;
 
     transition: 0.4s;
 }
@@ -808,7 +823,7 @@ body{
 /* Hover */
 
 .footer-social a:hover{
-    color: blanchedalmond;
+    color: #f8fafc;
 }
 
 /* Bottom Footer */
@@ -816,13 +831,13 @@ body{
 .footer-bottom{
     text-align: center;
 
-    border-top: 1px solid rosybrown;
+    border-top: 1px solid rgba(226, 232, 240, 0.15);
 
-    padding: 25px;
+    padding: 25px 80px 30px;
 }
 
 /* Bottom Text */
 
 .footer-bottom p{
-    color: whitesmoke;
+    color: #cbd5e1;
 }
